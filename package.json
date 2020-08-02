@@ -1,0 +1,22 @@
+{
+  "name": "basicfit-reservation-bot",
+  "version": "1.0.0",
+  "description": "Bot that makes reservation to the gym for me every day at 7:30 am",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vdnj/BasicFit-Reservation-Bot.git"
+  },
+  "author": "vdnj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vdnj/BasicFit-Reservation-Bot/issues"
+  },
+  "homepage": "https://github.com/vdnj/BasicFit-Reservation-Bot#readme",
+  "dependencies": {
+    "puppeteer": "^5.2.1"
+  }
+}

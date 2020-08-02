@@ -1,0 +1,4 @@
+ToDo :
+
+    - Créer le bot. Mettre le login et mdp dans un fichier que l'on mettra dans gitignore
+    - Dans le ReadMe, indiquer comment l'exécuter quotidiennement ( se renseigner sur anacron )
