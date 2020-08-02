@@ -1,12 +1,10 @@
-const puppeteer = require('puppeteer');
-const secret = require('./secret.json')
+const secret = require('./secret');
+const bf = require('./basic-fit');
  
 (async () => {
-  const browser = await puppeteer.launch();
-  const page = await browser.newPage();
-  await page.goto('https://my.basic-fit.com/login');
-  
 
- 
-  await browser.close();
+    await bf.initialize();
+    await bf.login(secret);
+    await bf.booking();
+    await bf.browser.close();
 })();

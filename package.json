@@ -4,7 +4,8 @@
   "description": "Bot that makes reservation to the gym for me every day at 7:30 am",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node BF-Reservation-Bot.js"
   },
   "repository": {
     "type": "git",
