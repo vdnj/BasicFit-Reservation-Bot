@@ -33,6 +33,7 @@ const bf = {
         await passInput.type(pass + String.fromCharCode(13));
 
         await bf.page.waitForSelector('#makeBookingId');
+        await bf.page.waitFor(1000);
 
     },
 
@@ -47,6 +48,7 @@ const bf = {
         const reserveBookingBtn = await bf.page.$('#reserveBookingId');
         reserveBookingBtn.click();
         await bf.page.waitForSelector('#clubNameId');
+        await bf.page.waitFor(1000);
 
             // Select the gym
         const clubNameBtn = await bf.page.$('#clubNameId');
@@ -57,12 +59,13 @@ const bf = {
         await bf.page.click('#reserveBookingId');
 
         await bf.page.waitForSelector('#clubNameId');
+        await bf.page.waitFor(1000);
 
             // Select the day
         const dayBtns = await bf.page.$$('.radio-button-row');
         const tommorowBtn = dayBtns[1];
         await tommorowBtn.click();
-        await bf.page.waitFor(2000);
+        await bf.page.waitFor(1000);
 
             // Select the time
         const morningBtn = await bf.page.$('#morningSlotsId');
@@ -71,16 +74,19 @@ const bf = {
         const timeBtns = await bf.page.$$('.button-cta-box.clickable');
         const seventThirtyBtn = timeBtns[8];
         await seventThirtyBtn.click();
+        await bf.page.waitFor(1000);
 
             // Submit first step
         const continueBtn = await bf.page.$('#nextBtnId');
         await continueBtn.click();
         await bf.page.waitForSelector('#goToFriendsBtnId');
+        await bf.page.waitFor(1000);
 
             // Select training duration
         const durationBtns = await bf.page.$$('.radio-button-row');
         const sixtyMinsBtn = durationBtns[2];
         await sixtyMinsBtn.click();
+        await bf.page.waitFor(1000);
 
             // Accept conditions
         const acceptConditionsBtn = await bf.page.$('.rules-bullet-points-section.clickable');
