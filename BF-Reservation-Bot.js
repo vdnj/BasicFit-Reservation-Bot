@@ -7,4 +7,5 @@ const bf = require('./basic-fit');
     await bf.login(secret);
     await bf.booking();
     await bf.browser.close();
+    
 })();
