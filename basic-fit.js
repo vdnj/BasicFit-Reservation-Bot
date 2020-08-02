@@ -10,9 +10,9 @@ const bf = {
         // Go to BF Page
 
         bf.browser = await puppeteer.launch({
-            headless : false, // To Remove when bot OP
-            defaultViewport: null, // To Remove when bot OP
-            args: ['--start-fullscreen'], // To Remove when bot OP
+            headless : true,
+            /* defaultViewport: null,
+            args: ['--start-fullscreen'],  Activate if headless false*/
             slowMo: 150
         });
         bf.page = await bf.browser.newPage();
